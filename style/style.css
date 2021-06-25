@@ -1,0 +1,88 @@
+/******règle générale*******/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2{
+    font-family: 'Bebas Neue', cursive;
+    color: #f99b2d;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+}
+
+h2{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    color: #b92526;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #353535;
+    line-height: 1.5rem;
+}
+
+.bold{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.medium{
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.break_line{
+    width: 65%;
+    height: 3px;
+    background-color: #f99b2d;
+    margin: 30px auto;
+}
+
+.read_more{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    background-color: #b92526;
+    text-align: center;
+    line-height: 40px;
+    color: #f7f7f7;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.show_more{
+    color: #b92526;
+    margin-left: 1rem;
+}
+
+main{
+    width: 96%;
+    margin: 0 auto;
+}

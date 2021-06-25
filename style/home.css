@@ -1,0 +1,247 @@
+/*******************************Contenu principal**************************************/
+
+
+/***************** article qui sommes nous*******************/
+#about{
+    display: flex;
+}
+
+.about_content{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_content p{
+    margin-top: 30px;
+}
+
+/***********************article nos actions*****************************/
+.intro{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.action_content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card{
+    width: 30%;
+    height: 60vh;
+    border-radius: 5px;
+    border: solid 1px #c8c8c8;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.06);
+    
+}
+
+.card_link{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card img,
+.card p{
+    width: 80%;
+}
+
+
+/****************************ACTU*********************************/
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/******Agenda*******/
+
+.agenda,
+.focus{
+    border: solid 1px #c8c8c8;
+    border-radius: 10px;
+}
+
+.agenda{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 22%;
+    padding: 20px 0;
+}
+
+.agenda h3{
+    text-align: center;
+}
+
+.agenda p{
+    width: 90%;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/*********Focus************/
+.focus{
+    width: 76%;
+    padding-bottom: 2rem;
+}
+
+.focus h3{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.container_focus{
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: .5rem 0;
+    
+}
+
+.content_focus{
+    background-color: #faeee1;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    display: none;
+    transition: 0.6s ease-in;
+}
+
+
+.content_focus.focus_in{
+    display: block;   
+}
+
+.translate_right{
+    animation: slide_focus_right 1.3s;
+}
+
+@keyframes slide_focus_right{
+    0%{
+        opacity: 0%;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
+
+.translate_left{
+    animation: slide_focus_left 1.3s;
+}
+
+@keyframes slide_focus_left{
+    0%{
+        opacity: 0%;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0%);
+    }
+}
+
+
+.content_focus_wrapper{
+    display: flex;
+    height: 45vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+.content_focus img{
+    width: 40%;
+    height: 30vh;
+    
+    object-fit: contain;
+}
+
+.text{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text h4{
+    text-align: center;
+    font-family: 'Roboto', sans sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.text p{
+    text-align: justify;
+    font-family: 'Roboto', sans sans-serif;
+    font-size: 16px;
+    font-weight:lighter;
+    margin: 10px 0;
+}
+
+.fa-chevron-left,
+.fa-chevron-right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b92526;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.fa-chevron-right{
+    right: 1%;
+}
+
+.fa-chevron-left{
+    left: 1%;
+}
+
+/***********partenaires************/
+
+.partner_container{
+    background-color:#faeee1 ;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    padding: 1rem 0;
+}
+
+.partner_container img{
+    width: 13.5rem;
+    height: 13.5rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+}
+
+.partner_container img:hover{
+    transform: scale(1.06);
+}
