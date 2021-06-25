@@ -1,0 +1,178 @@
+/******************************************En tête***************************************************/
+
+/***********bannière**********/
+.maxim{
+    background-color:#f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.maxim_title{
+    font-family: 'Nothing You Could Do', cursive;
+    color:#b92526;
+    margin-right: 20%;
+}
+
+.maxim_logo{
+    width: 100px;
+    margin-left: 20%;
+}
+
+
+/*****Navigation principale*****/
+#page_nav{
+    background-color: #b92526;
+    width: 100%;
+    z-index: 10;
+}
+
+#main_nav{
+    list-style: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: 65px;
+}
+
+.main_nav_anch,
+.main_nav_anch_active{
+    position: relative;
+   color: #f7f7f7;
+}
+
+.main_nav_anch::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.6rem;
+    width: 0;
+    height: 2px;
+    background-color: #f7f7f7;
+    transition: 0.4s ease-in;
+}
+
+.main_nav_anch:hover::after{
+    width: 100%;
+}
+
+.main_nav_anch_active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.6rem;
+    width: 100%;
+    height: 2px;
+    background-color: #f7f7f7;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+}
+
+/*****Image bannière*******/
+#main_img{
+    width: 100%;
+}
+
+.banner{
+    position: relative;
+    top: 0;
+}
+
+.banner_text{
+    position: absolute;
+    border-radius: 0.5rem;
+    background: linear-gradient( rgba(255,255,255,0.5), rgba(255,255,255,0.9));;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.banner_title{
+    font-family: 'Nothing You Could Do', cursive;
+    color:#b92526;
+    font-size: 64px;
+}
+
+.banner_logo{
+    width: 150px;
+    transform: translateX(-10%);
+}
+
+.wrapper_action{
+    width: 80%;
+    height: 85px;
+}
+
+.wrapper_action h2{
+    display: none;
+    
+}
+
+.wrapper_action h2.text-in{
+    display: block;
+    animation: textin 1s ease-in-out;
+}
+
+.wrapper_action h2.text-out{
+    animation: textout 1s ease-in-out;
+}
+
+
+
+.wrapper_action h2{
+    font-size: 80px;
+    letter-spacing: 4px;
+}
+
+.text_up_1{
+    text-shadow: 4px 4px 2px rgba(124, 129, 168, 0.5);
+}
+
+.text_up_2{
+    color: #353535;
+    text-shadow: 4px 4px 2px rgba(159, 157, 157, 1);
+}
+
+.text_up_3{
+    color: #b92526;
+    text-shadow: 4px 4px 2px rgba(60, 77, 77, 0.5);
+}
+
+@keyframes textin{
+    0%{
+        transform: translateY(70%);
+        opacity: 0%;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes textout{
+    0%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+
+    100%{
+        transform: translateY(-100%);
+        opacity: 0%;
+    }
+}

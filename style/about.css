@@ -1,0 +1,158 @@
+/*************présentation asso**********************/
+
+.about_title{
+    margin: 2.5rem 0;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.intro_presentation,
+.presentation_article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.intro_presentation img{
+    width: 38%;
+    object-fit: contain;
+}
+
+.intro_presentation_text{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+
+.history,
+.commitment{
+    width: 45%;
+}
+
+/**********************Présentation Bopa*************************/
+.bopa_wrapper{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 40vh 40vh;
+    grid-template-areas: 
+        "A B"
+        "A C"
+    ;
+    grid-gap: 1rem;
+}
+
+
+.benin{
+    grid-area: B;
+}
+
+.bopa{
+    grid-area: C;
+
+}
+
+.bopa img{
+    width: 40%;
+    height: 23vh;
+    margin-left:25% ;
+}
+
+.bopa_weather{
+    grid-area: A;
+}
+
+/***************************weather app**************************************/
+.weather_content{
+    position: relative;
+    width: 100%;
+    height: 78vh;
+    background: url(../assets/weather_app.jpg) no-repeat center/100%;
+}
+
+.weather_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "a b"
+        "c d"
+    ;
+}
+
+.box{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.box i,
+.box p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+#temp,
+#humidity{
+    align-self: end;
+}
+
+#temp{
+    background-color: rgba(185, 37, 38, 0.8);
+    grid-area: a;
+}
+
+#humidity{
+    background-color:rgba(53, 53, 53, 0.8);
+    grid-area: b;
+}
+
+#wind{
+    background-color:rgba(53, 53, 53, 0.8);
+    grid-area: c;
+}
+
+#actual_weather{
+    background-color: rgba(249, 155, 45, 0.8);
+    grid-area: d;
+}
+
+/***********************************l'équipe****************************************/
+.crew_team{
+    display: grid;
+    grid-template-columns:22% 22% 22% 22% ;
+    grid-template-rows: 60vh;
+    grid-gap: 2rem;
+    margin: 2.5rem 0;
+}
+
+.card_team{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.card_team img{
+    height: 35vh;
+}
+
+.card_team p{
+    font-size: 1.5rem;
+}
+
