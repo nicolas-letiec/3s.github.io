@@ -39,7 +39,7 @@
     grid-template-rows: 40vh 40vh;
     grid-template-areas: 
         "A B"
-        "A C"
+        "C D"
     ;
     grid-gap: 1rem;
 }
@@ -50,7 +50,7 @@
 }
 
 .bopa{
-    grid-area: C;
+    grid-area: D;
 
 }
 
@@ -61,14 +61,17 @@
 }
 
 .bopa_weather{
-    grid-area: A;
+    grid-area: A / C;
 }
 
 /***************************weather app**************************************/
 .weather_content{
     position: relative;
-    width: 100%;
-    height: 78vh;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60vh;
     background: url(../assets/weather_app.jpg) no-repeat center/100%;
 }
 
